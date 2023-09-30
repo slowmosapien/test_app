@@ -1,0 +1,180 @@
+:root {
+  --background-color: #1c1525;
+  --card-color: #2f2b3a;
+  --metaque-color: #342941;
+  --text-color: #F2F2F2;
+  --primary-color: #BB86FC;
+  --secondary-color: #03dac4;
+  --contrast-color: #FFEE58;
+  }
+  
+  
+  #app {
+    display: block;
+    max-width: 54em;
+	  margin: 0 auto;
+  }
+
+.transition-enter {
+    opacity: 0;
+    transition: opacity .3s ease-out;
+  }
+  
+.transition-enter-active {
+    opacity: 1;
+  }
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+body {
+  background-color:var( --background-color);
+  color:var( --text-color);
+}
+
+a {
+  background-color: var(--contrast-color);
+  border: 0px;
+  text-decoration: none;
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+  word-wrap: break-word;
+  padding: .3em .3em .3em .3em;
+}
+
+/*sidebar */
+.sidebar {
+  position: fixed;
+  display: none;
+  flex-flow: row wrap;
+  height: 100%;
+  z-index: 10;
+  width: 40%;
+  top: 0;
+  bottom: 0;
+  background-color: #191919;
+  animation: .5s stowSidebar forwards;
+  }
+
+  #sideheader {
+    width: fit-content;
+    display: block;
+    height: 5%;
+    text-align: right;
+  }
+
+  #togglebtn {
+    position: fixed;
+    right: 58%;
+    max-width: 2%;
+    height: auto;
+  }
+
+
+  #stratContainer {
+    overflow: auto;
+    height: 95%;
+  }
+
+  .stowed {
+    animation: .5s openSidebar forwards; 
+  }
+
+
+
+/* pasted in */
+.intro-phase-box {
+  display: block;
+  background:var( --card-color);
+  color: var( --text-color);
+  padding: 2em 2em 2em 2em;
+  border-radius: 13px;
+
+}
+.phase-title {
+  color:var( --primary-color);
+}
+
+.phase-box {
+  display: block;
+  background:var( --card-color);
+  color:var(--text-color);
+  padding: 2em 2em 2em 2em;
+  border-radius: 13px;
+ 
+}
+
+.phase-box h2{
+  text-align: center;
+  color:var(--primary-color);
+}
+
+.phase-box h3{
+  color:var(--primary-color);
+}
+
+.phase-button {
+  text-align: center;
+}
+
+.meta-que {
+
+  color: white;
+  background-color:var(--metaque-color);
+  border-radius: 15px;
+  border: solid .25px var(--primary-color);
+  padding: .25em .25em .25em 1em;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  
+  }
+  
+  .center-on-page {
+     text-align: center;
+  }
+  
+
+
+  /*Blurb styling */
+.blurb-box {
+  display: none;
+  flex: 1;
+  background:var( --card-color);
+  color:var(--text-color);
+  padding: 2em 2em 2em 2em;
+  border-radius: 13px;
+  align-content: center;
+  margin-bottom: 1.5em;
+}
+
+.blurb-box {
+flex: 1;
+}
+.blurb-text {
+  flex: 1;
+}
+.blurb-image {
+  flex: 1;
+  text-align: center;
+}
+.blurb-text h2 {
+  text-align: center;
+  color:var(--primary-color);
+}
+.blurb-button {
+  text-align: center;
+}
+.blurb-button  button{
+  width: 50%;
+}
+
+
+.show {
+  display: flex;
+}
+
